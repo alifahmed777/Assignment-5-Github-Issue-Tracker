@@ -1,26 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Issues Tracker</title>
+
     <link rel="stylesheet" href="styles/index.css">
 
     <!-- daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
-<body>
-    
-    <h2>alif</h2>
 
-    <script src="js/home.js"></script>
+<body>
+
+
+    <section class="w-2/7 mx-auto flex justify-center flex-col items-center">
+        <div class="mt-6 mb-5">
+            <img src="assets/github-logo.png">
+
+        </div>
+
+        <h2 class="text-[#1F2937] font-semibold text-2xl">GitHub Issues Tracker</h2>
+        <p class="text-[#64748B]">Sign in to manage your issues</p>
+
+    </section>
+
+
+    <section class="w-2/7 mx-auto flex justify-center">
+        <button id="login-btn" class="btn bg-[#4A00FF] text-white  w-full my-5 rounded-lg">Sign In</button>
+    </section>
+
+
+
+    <section class="w-2/7 mx-auto">
+        <div>
+            <fieldset class="fieldset">
+                <legend class="fieldset-legend text-[#1F2937] ">Username</legend>
+                <input id="username" type="text" class="input w-full" placeholder="Enter Username" />
+                <p class="label text-[#4A00FF]">Default: admin</p>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset class="fieldset">
+                <legend class="fieldset-legend">Password</legend>
+                <input id="password" type="password" class="input w-full" placeholder="Enter Password" />
+                <p class="label text-[#4A00FF]">Default: admin123</p>
+            </fieldset>
+        </div>
+    </section>
+
+    <section class="w-2/7 mx-auto flex items-center gap-1">
+       <hr class="w-1/2 text-[#E4E4E7]">
+        <p> OR </p>
+       <hr class="w-1/2 text-[#E4E4E7]">
+
+    </section>
+
+    <section class="w-2/7 mx-auto my-5 text-center">
+        <p class="text-[14px] text-[#64748B]">Demo Credentials:</p>
+        <div class="py-6 bg-[#F8FAFC]">
+            <p><span class="font-semibold">Username:</span> admin</p>
+            <p><span class="font-semibold">Password:</span> admin123</p>
+        </div>
+    </section>
+
+
+    <script src="js/login.js"></script>
 </body>
+
 </html>
