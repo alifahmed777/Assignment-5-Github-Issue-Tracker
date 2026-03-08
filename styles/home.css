@@ -1,0 +1,17 @@
+*{
+    font-family: "Geist", sans-serif;  
+}
+
+.border1{
+    border-color: #00A96E;
+}
+.border2{
+    border-color: #A855F7;
+}
+
+.whiteColor{
+    color: white;
+}
+.grayColor{
+    color: #64748B;
+}
